@@ -4,6 +4,7 @@
 - [문제집](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)에서 매주 기본 1문제, 응용 2문제 선정
 - 문제풀이 및 PR 마감: 토요일 23:59
 - 코드리뷰 마감: 차주 월요일 11:59
+- 문제 풀이 언어: Java
 
 ### 제출방법
 1. repository를 `fork` 후, `clone`합니다. (초기 1회만) / 새로운 주차 폴더가 생겼을 경우 clone이 아닌 `pull` 또는 `fetch`을 진행합니다. 
