@@ -8,7 +8,7 @@ public class Main {
 	public static int[] dx = { -1, 0, 0, 1 }, dy = { 0, -1, 1, 0 };
 	public static int rst = 0;
 
-	public static boolean isConnected() {
+	public static boolean isConnected() { 
 		Queue<Integer> q = new ArrayDeque<>(); // bfs로 탐색.
 		boolean[] visited = new boolean[7];
 		q.add(picked[0]);

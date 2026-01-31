@@ -18,6 +18,6 @@ public class Main {
 			}
 			if (s.isEmpty()) cnt++;
 		}
-		System.out.println(cnt);
+		System.out.println(cnt); 
 	}
 }
