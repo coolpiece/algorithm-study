@@ -3,7 +3,7 @@ import java.util.*;
 // S'(이다‘솜’파의 학생을 나타냄) 또는 'Y'(임도‘연’파의 학생
 // S가 적어도 4명 이상이어야 함
 
-public class java_1941 {
+public class java_1941_윤소윤 {
 	static char [][] stu = new char[5][5]; //학생행
 	static int ans = 0; // 가능 횟수 
 	
