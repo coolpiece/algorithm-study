@@ -84,9 +84,10 @@ public class Main {
                             }
 
                             if (connectCount == 7) {
-                                return sCount >= 4;
+                                if (sCount >= 4) {
+                                    return true;
+                                }
                             }
-
 
                             queue.offer(nextPos);
                         }
