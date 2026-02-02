@@ -6,7 +6,7 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine()), cnt = 0;
 		for (int i = 0; i < n; i++) {
-			StringBuilder sb = new StringBuilder(br.readLine());
+			String sb = new String(br.readLine());
 			if (sb.length() % 2 != 0)
 				continue;
 			Stack<Character> s = new Stack<>();
@@ -18,6 +18,6 @@ public class Main {
 			}
 			if (s.isEmpty()) cnt++;
 		}
-		System.out.println(cnt); 
+		System.out.println(cnt);
 	}
 }
