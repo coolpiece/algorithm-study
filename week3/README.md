@@ -6,7 +6,7 @@
 | :--: | :--: | :--: | :--: | :--: | :--: |
 | 6603 | [로또](https://www.acmicpc.net/problem/6603) | ❌ | ❌ | ❌ | ❌ |
 | 14500 | [테트로미노](https://www.acmicpc.net/problem/14500) | ❌ | ❌ | ❌ | ❌ |
-| 15686 | [치킨 배달](https://www.acmicpc.net/problem/15686)  ❌ | ❌ | ❌ | ❌ | |
+| 15686 | [치킨 배달](https://www.acmicpc.net/problem/15686) | ❌ | ❌ | ❌ | ❌ | |
 
 <br>
 
