@@ -2,11 +2,11 @@ import java.io.*;
 import java.util.*;
 
 class Problem implements Comparable<Problem> {
-	int level, num;
+	int num, level;
 
-	Problem(int level, int num) {
-		this.level = level;
+	Problem(int num, int level) {
 		this.num = num;
+		this.level = level;
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class Main {
 		for (int i = 0; i < n; i++) {
 			st = new StringTokenizer(br.readLine());
 			int p = Integer.parseInt(st.nextToken()), l = Integer.parseInt(st.nextToken());
-			set.add(new Problem(l, p));
+			set.add(new Problem(p, l));
 			map.put(p, l);
 		}
 		int m = Integer.parseInt(br.readLine());
@@ -46,11 +46,11 @@ public class Main {
 				break;
 			case "add":
 				int l = Integer.parseInt(st.nextToken());
-				set.add(new Problem(l, input));
+				set.add(new Problem(input, l));
 				map.put(input, l);
 				break;
 			case "solved":
-				set.remove(new Problem(map.get(input), input)); // map에서 해당 번호 문제의 난이도 검색 -> 객체로 만들어 검색, 삭제.
+				set.remove(new Problem(input, map.get(input))); // map에서 해당 번호 문제의 난이도 검색 -> 객체로 만들어 검색, 삭제.
 				map.remove(input);
 				break;
 			}
