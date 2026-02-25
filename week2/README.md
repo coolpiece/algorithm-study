@@ -4,9 +4,9 @@
 
 | 문제 번호 | 문제 이름 | 김상균 | 윤소윤 | 최하은 | 한서윤 |
 | :--: | :--: | :--: | :--: | :--: | :--: |
-| 12891 | [DNA 비밀번호](https://www.acmicpc.net/problem/12891) | ✅ | ❌ | ✅ | ✅ |
-| 21939 | [문제 추천 시스템 Version 1](https://www.acmicpc.net/problem/21939) | ✅ | ❌ | ✅ | ✅ |
-| 2170 | [선 긋기](https://www.acmicpc.net/problem/2170) | ✅ | ❌ | ✅ | ✅ |
+| 12891 | [DNA 비밀번호](https://www.acmicpc.net/problem/12891) | ✅ | 🛠 | ✅ | ✅ |
+| 21939 | [문제 추천 시스템 Version 1](https://www.acmicpc.net/problem/21939) | ✅ | 🛠 | ✅ | ✅ |
+| 2170 | [선 긋기](https://www.acmicpc.net/problem/2170) | ✅ | 🛠 | ✅ | ✅ |
 
 <br>
 
