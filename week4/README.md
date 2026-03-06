@@ -4,9 +4,9 @@
 
 | 문제 번호 | 문제 이름 | 김상균 | 윤소윤 | 최하은 | 한서윤 |
 | :--: | :--: | :--: | :--: | :--: | :--: |
-| 1780 | [종이의 개수](https://www.acmicpc.net/problem/1780) | 🛠 | ❌ | ❌ | ❌ |
-| 2146 | [다리 만들기](https://www.acmicpc.net/problem/2146) | 🛠 | ❌ | ❌ | ❌ |
-| 2573 | [빙산](https://www.acmicpc.net/problem/2573) | 🛠 | ❌ | ❌ | ❌ |
+| 1780 | [종이의 개수](https://www.acmicpc.net/problem/1780) | ✅ | ✅ | ✅ | ✅ |
+| 2146 | [다리 만들기](https://www.acmicpc.net/problem/2146) | ✅ | ✅ | ✅ | ✅ |
+| 2573 | [빙산](https://www.acmicpc.net/problem/2573) | ✅ | ✅ | ✅ | ✅ |
 
 <br>
 
@@ -15,5 +15,3 @@
 - ✅: 피드백 반영 완료
 - 🛠: PR 완료 및 코드 리뷰 중
 - ❌: 미제출
-
-
