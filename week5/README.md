@@ -4,9 +4,9 @@
 
 | 문제 번호 |                      문제 이름                      | 김상균 | 윤소윤 | 최하은 | 한서윤 |
 |:-----:|:-----------------------------------------------:| :--: | :--: | :--: | :--: |
-| 2075  | [N번째 큰 수](https://www.acmicpc.net/problem/2075) | ❌ | ❌ | ❌ | ❌ |
-| 2589  |   [보물섬](https://www.acmicpc.net/problem/2589)   | ❌ | ❌ | ❌ | ❌ |
-| 4179  |   [불!](https://www.acmicpc.net/problem/4179)    | ❌ | ❌ | ❌ | ❌ |
+| 2075  | [N번째 큰 수](https://www.acmicpc.net/problem/2075) | ✅ | ✅ | ✅ | ✅ |
+| 2589  |   [보물섬](https://www.acmicpc.net/problem/2589)   | ✅ | ✅ | ✅ | ✅ |
+| 4179  |   [불!](https://www.acmicpc.net/problem/4179)    | ✅ | ✅ | ✅ | ✅ |
 
 ### 참고
 
