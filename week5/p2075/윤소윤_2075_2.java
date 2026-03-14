@@ -1,9 +1,7 @@
-package week5.p2075;
-
 import java.io.*;
 import java.util.*;
 
-public class 윤소윤_2075 {
+public class 윤소윤_2075_2 {
 
     public static void main(String [] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
