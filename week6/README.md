@@ -4,9 +4,9 @@
 
 | 문제 번호 |                      문제 이름                      | 윤소윤 | 최하은 | 한서윤 |
 |:-----:|:-----------------------------------------------:| :--: | :--: | :--: |
-| BOJ 16398  | [행성 연결](https://www.acmicpc.net/problem/16398) | ❌ | 🛠 | ❌ |
+| BOJ 16398  | [행성 연결](https://www.acmicpc.net/problem/16398) | ❌ | ✅ | ✅ |
 | SWEA 14596  |   [[Pro] 섬 지키기](https://github.com/haeun320/algorithm-study)   | ❌ | ❌ | ❌ |
-| (선택) BOJ 7511  |   [소셜 네트워킹 어플리케이션](https://www.acmicpc.net/problem/7511)    | ❌ | ❌ | ❌ |
+| (선택) BOJ 7511  |   [소셜 네트워킹 어플리케이션](https://www.acmicpc.net/problem/7511)    | ❌ | ❌ | ✅ |
 
 ### 참고
 
