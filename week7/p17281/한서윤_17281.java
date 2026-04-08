@@ -18,10 +18,10 @@ public class Main {
 		}
 
 		order = new int[9]; // 타격 순서 저장.
-		picked = new boolean[9]; // 선택 여부 저장.
+		picked = new boolean[9]; // picked[i]: i+1번 선수 선택 여부.
 
-		// 4번 타자는 1번 선수.
-		order[3] = 0;
+//		4번 타자는 1번 선수.
+//		order[3] = 0; // 어차피 0으로 초기화 되므로 삭제.
 		picked[0] = true;
 
 		total = 0;
@@ -29,7 +29,7 @@ public class Main {
 		System.out.println(total);
 	}
 
-	static void permutation(int cnt) {
+	static void permutation(int cnt) { // cnt번 타자 선택 / 비선택.
 		if (cnt == 9) { // 순열 완성.
 			total = Math.max(total, calScore());
 			return;

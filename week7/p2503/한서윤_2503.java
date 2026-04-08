@@ -9,7 +9,7 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 		count = 0; // 가능한 후보 수.
-		list = new boolean[1000]; // list[n]: 숫자 n의 가능 여.
+		list = new boolean[1000]; // list[n]: 숫자 n의 가능 여부.
 		Arrays.fill(list, false);
 		visited = new boolean[10]; // 순열을 위한 초기화.
 		Arrays.fill(visited, false);
