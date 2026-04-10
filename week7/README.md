@@ -4,8 +4,8 @@
 
 | 문제 번호 |                      문제 이름                      | 윤소윤 | 한서윤 |
 |:-----:|:-----------------------------------------------:| :--: | :--: |
-| BOJ 17281  | [⚾](https://www.acmicpc.net/problem/17281) | ❌ | 🛠 |
-| BOJ 2503  |   [숫자 야구](https://www.acmicpc.net/problem/2503)   | ❌ | 🛠 |
+| BOJ 17281  | [⚾](https://www.acmicpc.net/problem/17281) | ✅ | ✅ |
+| BOJ 2503  |   [숫자 야구](https://www.acmicpc.net/problem/2503)   | ✅ | ✅ |
 
 ### 참고
 
