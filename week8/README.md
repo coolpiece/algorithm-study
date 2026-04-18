@@ -4,9 +4,9 @@
 
 | 문제 번호 |                      문제 이름                      | 윤소윤 | 한서윤 |
 |:-----:|:-----------------------------------------------:| :--: | :--: |
-| BOJ 3190  | [뱀](https://www.acmicpc.net/problem/3190) | ❌ | ❌ |
-| BOJ 4485  |   [녹색 옷 입은 애가 젤다지?](https://www.acmicpc.net/problem/4485)   | ❌ | ❌ |
-| BOJ 5598  |   [카이사르 암호](https://www.acmicpc.net/problem/4485)   | ❌ | ❌ |
+| BOJ 3190  | [뱀](https://www.acmicpc.net/problem/3190) | ✅ | ✅ |
+| BOJ 4485  |   [녹색 옷 입은 애가 젤다지?](https://www.acmicpc.net/problem/4485)   | ✅ | ✅ |
+| BOJ 5598  |   [카이사르 암호](https://www.acmicpc.net/problem/4485)   | ✅ | ✅ |
 
 
 ### 참고
