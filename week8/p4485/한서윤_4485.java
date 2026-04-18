@@ -42,6 +42,7 @@ public class Main {
 					board[i][j] = Integer.parseInt(st.nextToken());
 			}
 
+			cost[0][0] = board[0][0];
 			pq.add(new Rupee(0, 0, board[0][0])); // 시작점 넣기.
 
 			while (!pq.isEmpty()) {
@@ -79,6 +80,7 @@ public class Main {
 			}
 			rst.append("Problem ").append(t).append(": ").append(cost[n - 1][n - 1]).append("\n");
 			t++;
+			pq.clear();
 		}
 		System.out.println(rst);
 	}
