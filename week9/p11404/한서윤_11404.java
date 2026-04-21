@@ -9,12 +9,11 @@ public class Main {
 		long cost[][] = new long[n + 1][n + 1];
 
 		// 플로이드-워셜 수행을 위해 최댓값의 절반값으로 배열 초기화.
-		for (int i = 1; i <= n; i++)
+		for (int i = 1; i <= n; i++) {
 			Arrays.fill(cost[i], Long.MAX_VALUE / 2);
-
-		// 자기 자신에게 가는 비용.
-		for (int i = 1; i <= n; i++)
+			// 자기 자신에게 가는 비용.
 			cost[i][i] = 0;
+		}
 
 		// 입력.
 		for (int i = 0; i < m; i++) {
@@ -35,13 +34,12 @@ public class Main {
 		}
 
 		// 출력.
+		StringBuilder rst = new StringBuilder();
 		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if (cost[i][j] == Long.MAX_VALUE / 2)
-					cost[i][j] = 0;
-				System.out.print(cost[i][j] + " ");
-			}
-			System.out.println();
+			for (int j = 1; j <= n; j++)
+				rst.append((cost[i][j] == Long.MAX_VALUE / 2) ? 0 : cost[i][j]).append(" ");
+			rst.append("\n");
 		}
+		System.out.println(rst);
 	}
 }
