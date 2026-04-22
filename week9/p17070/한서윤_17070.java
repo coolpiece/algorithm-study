@@ -1,71 +1,66 @@
 import java.io.*;
 import java.util.*;
 
-class Rupee implements Comparable<Rupee> {
-	int r, c, size;
-
-	Rupee(int r, int c, int size) {
-		this.r = r;
-		this.c = c;
-		this.size = size;
-	}
-
-	@Override
-	public int compareTo(Rupee o) {
-		return Integer.compare(this.size, o.size);
-	}
-}
-
 public class Main {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
-		int dr[] = { -1, 1, 0, 0 }, dc[] = { 0, 0, -1, 1 };
-		StringBuilder rst = new StringBuilder();
+		int n = Integer.parseInt(br.readLine());
+		int home[][] = new int[n + 1][n + 1]; // 집의 상태 저장.
 
-		int t = 1, n, board[][], cost[][], r, c, size;
-		boolean visited[][];
-		PriorityQueue<Rupee> pq = new PriorityQueue<>(); // 선택 가능한 위치 후보. 비용이 적은 순으로 정렬.
-		while (true) {
-			n = Integer.parseInt(br.readLine());
-			if (n == 0)
-				break;
-			board = new int[n][n];
-			cost = new int[n][n];
-			visited = new boolean[n][n];
-			for (int i = 0; i < n; i++) // 최댓값으로 초기화.
-				Arrays.fill(cost[i], Integer.MAX_VALUE);
+		// dp[dir][r][c] = cnt. dir: 방향(0-가로, 1-세로, 2-대각선.), cnt:(r, c)에 도착하는 경우의 수.
+		int dp[][][] = new int[3][n + 1][n + 1];
 
-			for (int i = 0; i < n; i++) { // 동굴 현황 입력.
-				st = new StringTokenizer(br.readLine());
-				for (int j = 0; j < n; j++)
-					board[i][j] = Integer.parseInt(st.nextToken());
-			}
-
-			pq.add(new Rupee(0, 0, board[0][0])); // 시작점 넣기.
-
-			while (!pq.isEmpty()) {
-				r = pq.peek().r;
-				c = pq.peek().c;
-				size = pq.poll().size;
-				if (visited[r][c])
-					continue; // 이미 선택한 위치.
-
-				visited[r][c] = true; // 방문 처리.
-				cost[r][c] = size; // 최소 비용 업데이트.
-
-				for (int i = 0; i < 4; i++) { // 상하좌우 탐색. 아직 선택하지 않은 위치 추가.
-					int nr = r + dr[i], nc = c + dc[i];
-					if (nr < 0 || nr >= n || nc < 0 || nc >= n)
-						continue;
-					if (visited[nr][nc]) // 비용 계산이 끝난 위치는 다시 계산할 필요 없음. (가장 최소인 값만 갱신했기 때문에 더 작아질 수 x.)
-						continue;
-					pq.add(new Rupee(nr, nc, size + board[nr][nc]));
-				}
-			}
-			rst.append("Problem ").append(t).append(": ").append(cost[n - 1][n - 1]).append("\n");
-			t++;
+		for (int i = 1; i <= n; i++) {
+			st = new StringTokenizer(br.readLine());
+			for (int j = 1; j <= n; j++)
+				home[i][j] = Integer.parseInt(st.nextToken());
 		}
+
+		dp[0][1][2] = 1;
+		for (int r = 1; r <= n; r++) {
+			for (int c = 1; c <= n; c++) {
+				// 벽이면 패스.
+				if (home[r][c] == 1)
+					continue;
+
+				// 가로로 도착하는 경우.
+				dp[0][r][c] += dp[0][r][c - 1] + dp[2][r][c - 1];
+				// 세로로 도착하는 경우.
+				dp[1][r][c] += dp[1][r - 1][c] + dp[2][r - 1][c];
+				// 대각선으로 도착하는 경우.
+				if (home[r - 1][c] != 1 && home[r][c - 1] != 1)
+					dp[2][r][c] += dp[0][r - 1][c - 1] + dp[1][r - 1][c - 1] + dp[2][r - 1][c - 1];
+			}
+		}
+
+		// 아래 방식으로도 가능.
+		// for (int r = 1; r <= n; r++) {
+		// 	for (int c = 3; c <= n; c++) {
+		// 		// 벽이면 패스.
+		// 		if (home[r][c] == 1)
+		// 			continue;
+
+		// 		// 가로로 도착하는 경우.
+		// 		dp[0][r][c] = dp[0][r][c - 1] + dp[2][r][c - 1];
+		// 		// 세로로 도착하는 경우.
+		// 		dp[1][r][c] = dp[1][r - 1][c] + dp[2][r - 1][c];
+		// 		// 대각선으로 도착하는 경우.
+		// 		if (home[r - 1][c] != 1 && home[r][c - 1] != 1)
+		// 			dp[2][r][c] = dp[0][r - 1][c - 1] + dp[1][r - 1][c - 1] + dp[2][r - 1][c - 1];
+		// 	}
+		// }
+
+		// 확인용 출력.
+		// for (int i = 0; i < 3; i++) {
+		// 	for (int j = 0; j <= n; j++)
+		// 		System.out.println(Arrays.toString(dp[i][j]));
+		// 	System.out.println();
+		// }
+		
+		int rst = 0;
+		for (int i = 0; i < 3; i++) // 가로, 세로, 대각선으로 도착한 경우를 합치면 됨.
+			rst += dp[i][n][n];
 		System.out.println(rst);
 	}
 }
