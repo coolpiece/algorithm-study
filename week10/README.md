@@ -4,8 +4,8 @@
 
 | 문제 번호 |                      문제 이름                      | 윤소윤 | 한서윤 |
 |:-----:|:-----------------------------------------------:| :--: | :--: |
-| BOJ 17144  | [미세먼지 안녕!](https://www.acmicpc.net/problem/17144) | ❌ | ❌ |
-| BOJ 17616  |   [등수 찾기](https://www.acmicpc.net/problem/17616)   | ❌ | ❌ |
+| BOJ 17144  | [미세먼지 안녕!](https://www.acmicpc.net/problem/17144) | 🛠 | ✅ |
+| BOJ 17616  |   [등수 찾기](https://www.acmicpc.net/problem/17616)   | 🛠 | ✅ |
 
 ### 참고
 
