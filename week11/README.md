@@ -1,11 +1,11 @@
-# 10주차
+# 11주차
 
-문제 풀이 기간: 26.04.20 - 26.04.26
+문제 풀이 기간: 26.04.27 - 26.05.03
 
 | 문제 번호 |                      문제 이름                      | 윤소윤 | 한서윤 |
 |:-----:|:-----------------------------------------------:| :--: | :--: |
-| BOJ 17144  | [미세먼지 안녕!](https://www.acmicpc.net/problem/17144) | 🛠 | ✅ |
-| BOJ 17616  |   [등수 찾기](https://www.acmicpc.net/problem/17616)   | 🛠 | ✅ |
+| PG 468375  | [발전소 회로 복구](school.programmers.co.kr/learn/courses/30/lessons/468375) | ❌ | ❌ |
+| PG 468380  |   [제곱 개수 배열](school.programmers.co.kr/learn/courses/30/lessons/468380)   | ❌ | ❌ |
 
 ### 참고
 
